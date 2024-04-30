@@ -31,7 +31,7 @@ def scan_ports(ip, ports):
 
 def save_to_file(ip, open_ports):
     # Guardar los puertos abiertos en un archivo
-    with open(f"{ip}_open_ports.txt", "w") as file:
+    with open(f"open_ports_{ip}.txt", "w") as file:
         file.write("\n".join(map(str, open_ports)))
 
 def main():
@@ -51,3 +51,5 @@ def main():
     for ip in ips:
         open_ports = scan_ports(ip, ports)
         save_to_file(ip, open_ports)
+if __name__ == "__main__":
+    main()
