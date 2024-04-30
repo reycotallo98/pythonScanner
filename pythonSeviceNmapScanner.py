@@ -5,7 +5,7 @@ import os
 directorio = '.'  # Puedes cambiar el directorio según sea necesario
 
 # Patrón para buscar archivos
-patron = '*_open_ports.txt'
+patron = 'open_ports_*.txt'
 
 # Inicializar las cadenas para almacenar las IPs y los puertos
 IP = ""
